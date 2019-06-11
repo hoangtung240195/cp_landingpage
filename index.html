@@ -26,8 +26,33 @@
 	<!--RESPONSIVE TAB -->
         <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
     
+
+
   </head>
   <body>
+
+   <!-- Messenger chat-->
+   <div id="fb-root"></div>
+   <script>
+               window.fbAsyncInit = function() {
+               FB.init({
+                  xfbml            : true,
+                  version          : 'v3.3'
+               });
+               };
+   
+               (function(d, s, id) {
+               var js, fjs = d.getElementsByTagName(s)[0];
+               if (d.getElementById(id)) return;
+               js = d.createElement(s); js.id = id;
+               js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+               fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+   
+   <div class="fb-customerchat" attribution=setup_tool page_id="430777803697909" logged_in_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?" logged_out_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?">
+   </div>
+   <!-- End chat -->
+
   <div class="se-pre-con"></div>
   <!-- header -->
     <div class="header" id="header">
@@ -88,7 +113,7 @@
     </div>
    <!-- header End-->
    
-   <!-- Clients Logo--> 
+   <!--Clients Logo--> 
    <!-- <div class="section12">
        <div class="container">
        <div class="row">
@@ -107,10 +132,10 @@
              
           </div>
         </div>
-      </div> -->
-    <!-- </div>  --> 
-    <!-- Clients Logo End   
-   
+
+      </div>
+    </div>  -->
+    <!-- Clients Logo End    --->   
  	<!-- features -->
      <div class="section2" id="features">
        <div class="container">
@@ -195,10 +220,10 @@
     <div class="grop">
     
     <div class="input-group">
-      <input type="text" class="form-control text1" placeholder="Tên của bạn">
-      <input type="text" class="form-control text2" placeholder="Email">
-      <input type="text" class="form-control text2" placeholder="Số điện thoại">
-      <button class="btn btn-secondary" type="button">đăng ký dùng thử</button>
+      <input type="text" class="form-control text1" placeholder="Tên của bạn" style="width:30%;">
+      <input type="text" class="form-control text2" placeholder="Email" style="width:25%;">
+      <input type="text" class="form-control text2" placeholder="Số điện thoại" style="width:25%;">
+      <button class="btn btn-secondary" type="button"  style="width:20%; margin-left: 0px;">Đăng ký</button>
       
     </div>
     
@@ -223,8 +248,7 @@
                  <h2 class="wow fadeInUp">Sử dụng Cloudjet Potential</h2>
                </div>
                <!-- <p class="wow fadeInUp">Lorem Ipsum is simply dummy text the printing and typeseing industry Lorem Ipsum has been standarddummy text ever since the when Lorem Ipsum is simply. -->
-               </p>
-				
+               <!-- </p> -->
                 <div class="nomber-text wow fadeInUp">
                   <div class="nomber-text-row">
                      <div class="nomber-text-row-inner">
@@ -283,14 +307,14 @@
           <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
                <div class="heading">
-                  <span>Tại sao bạn chọn chúng tôi ?</span>
+                  <span>Tại sao bạn chọn chúng tôi?</span>
                   <h2>Các con số</h2>
                </div>
           </div>
       </div>
       
         <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-3 module">
+          <div class="col-lg-4 col-md-4 col-sm-4 module">
              <div class="our-box">
                 <img src="images/download.png" alt="download">
                 <div class="down-box">
@@ -301,8 +325,8 @@
              </div>
           </div>
           
-          <div class="col-lg-3 col-md-3 col-sm-3 module">
-             <div class="our-box">
+          <div class="col-lg-4 col-md-4 col-sm-4 module">
+            <div class="our-box">
                 <img src="images/smile.png" alt="smile">
                 <div class="down-box">
                   <div class="cnt"><h3 class="count">50%</h3><h4>%</h4></div>
@@ -312,8 +336,8 @@
              </div>
           </div>
           
-          <div class="col-lg-3 col-md-3 col-sm-3 module">
-             <div class="our-box">
+          <div class="col-lg-4 col-md-4 col-sm-4 module">
+            <div class="our-box">
                 <img src="images/users.png" alt="users">
                 <div class="down-box">
                   <div class="cnt"><h3 class="count">100</h3><h4>%</h4></div>
@@ -361,8 +385,12 @@ dummy text ever since the when an Lorem Ipsum is simply dummytext</p>
                 <span> <img src="images/pc.png" alt="secton-image"></span>
                 <h2>Tính năng</h2>
                 <p class="p">
-                Lorem Ipsum is simply dummy text the printing and type
-seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem Ipsum is simply dummy text the printing and typeseing Lorem.
+                     <ul>
+                           <li>Quản Lý Và Lưu Trữ Hồ Sơ Ứng Viên</li>
+                           <li>Tạo Tính Năng Riêng Theo Quy Trình Của Công Ty</li>
+                           <li>Thảo Luận, Đánh Giá Cùng Đội Nhóm</li>
+                           <li>Tự Động Gửi E-Mail thông báo</li>
+                        </ul>
                 </p>
                 <div class="clear"> </div>
                 <a href="#" class="acc">Tạo tài khoản</a>
@@ -392,11 +420,11 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
                 <span> <img src="images/system-icon.png" alt="system-icon"></span>
                 <h2>Đồng bộ dữ liệu thời gian thực</h2>
                 </div>
-                <p class="p">
+                <!-- <p class="p">
                Lorem Ipsum is simply dummy text the printing and typeseing industry Lorem Ipsum has been standarddummy text ever since ting and typeseing <strong class="highlited-text">Hightlight Text </strong>industry Lorem Ipsum has been standarddummy text ever since the when. Lorem Ipsum is simply dummy text the printing and typeseing.Lorem Ipsum has been standarddummy text ever since the when an Lorem.
 				<div class="clear"> </div>
                 
-                </p>
+                </p> -->
                 <a href="#" class="acc">Tạo tài khoản ngay</a>
              </div>
           </div>
@@ -413,7 +441,7 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
     <!-- Description End--> 
     
     <!-- Screen section --> 
-	<div class="screen-section dark-section dark-color-bg" id="screens">
+	<!-- <div class="screen-section dark-section dark-color-bg" id="screens">
     	<div class="container">
 		<div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
@@ -433,7 +461,7 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
                 </ul>
                 <div class="resp-tabs-container hor_1">
                     <div>
-                        <p><!--vertical Tabs-->
+                        <p>
                         </p>
                         <img class="tab-screen-image" src="images/screen-tab-1.png" alt="screen-image" >
                         
@@ -447,8 +475,6 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
                     </div>
                     <div>
                         <p>
-                            <!--vertical Tabs-->
-    
                             
                         </p>
                         <img class="tab-screen-image" src="images/screen-tab-4.png" alt="screen-image">
@@ -457,11 +483,11 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
             </div>
         </div>
 		</div>
-    </div>
+    </div> -->
     <!-- End Screen section -->     
       
   <!-- Testimonials--> 
-     <div class="section8" id="testimonials">
+     <!-- <div class="section8" id="testimonials">
        <div class="con">
        <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
@@ -558,7 +584,7 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
        </div>
      </div>
    </div>
- </div>
+ </div> -->
   <!-- testimonials End--> 
   
   <!-- Pricing--> 
@@ -570,8 +596,8 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
 		<div class="pricing-inner-container">
           <div class="col-lg-12 col-md-12 col-sm-12">
                <div class="heading">
-                  <span>our pricing</span>
-                  <h2>Best plans for you</h2>
+                  <span>chi phí</span>
+                  <h2>Các gói dịch vụ</h2>
                </div>
           </div>
           
@@ -581,7 +607,7 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
              <div class="plan wow fadeInUp" data-wow-duration="1s">
                 <div class="plan-ttl">
                      <span>Mini</span>
-                     <h3><strong class="currency-sign">VNĐ</strong>1500000<strong class="plan-time">/năm</strong></h3>
+                     <h3>1.500.000<br><strong class="plan-time">VND/năm</strong></h3>
                 </div>
                 
                  <ul>
@@ -600,7 +626,7 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
              <div class="plan wow fadeInUp" data-wow-duration="2s">
                 <div class="plan-ttl prefered">
                      <span>Basic</span>
-                     <h3><strong class="currency-sign">VNĐ</strong>4500000<strong class="plan-time">/năm</strong></h3>
+                     <h3>4.500.000<br><strong class="plan-time">VND/năm</strong></h3>
                 </div>
                 
                  <ul>
@@ -619,7 +645,7 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
              <div class="plan wow fadeInUp" data-wow-duration="2s">
                 <div class="plan-ttl">
                      <span>Pro</span>
-                     <h3><strong class="currency-sign">VNĐ</strong>17000000<strong class="plan-time">/năm</strong></h3>
+                     <h3>17.000.000<br><strong class="plan-time">VND/năm</strong></h3>
                 </div>
                 
                  <ul>
@@ -634,44 +660,48 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
              </div> 
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-4 pos module">
-            <div class="plan wow fadeInUp" data-wow-duration="2s">
-               <div class="plan-ttl">
-                    <span>Enterprise</span>
-                    <h3><strong class="currency-sign">VNĐ</strong>35000000<strong class="plan-time">/năm</strong></h3>
-               </div>
-               
-                <ul>
-                  <li class="yes"><span>Limited Indtall</span></li>
-                  <li class="yes"><span>Unlimited Downlaod</span></li>
-                  <li class="yes"><span>Free One Year Support</span></li>
-                  <li class="no"><span>Free 15GB Linux Hosing</span></li>
-                  <li class="no"><span>30GB Storage</span></li>
-
-                </ul>
-                <div class="plan-btn"><a href="#">choose plan</a></div>
-            </div> 
          </div>
 
-         <div class="col-lg-4 col-md-4 col-sm-4 pos module">
-            <div class="plan wow fadeInUp" data-wow-duration="2s">
-               <div class="plan-ttl">
-                    <span>Ultimate</span>
-                    <h3><strong class="currency-sign">VNĐ</strong>Cần xem lại<strong class="plan-time">/năm</strong></h3>
-               </div>
-               
-                <ul>
-                  <li class="yes"><span>Limited Indtall</span></li>
-                  <li class="yes"><span>Unlimited Downlaod</span></li>
-                  <li class="yes"><span>Free One Year Support</span></li>
-                  <li class="no"><span>Free 15GB Linux Hosing</span></li>
-                  <li class="no"><span>30GB Storage</span></li>
+         <div class="pricing-boxes">
 
-                </ul>
-                <div class="plan-btn"><a href="#">choose plan</a></div>
-            </div> 
+            <div class="col-lg-4 col-md-4 col-sm-4 pos module">
+               <div class="plan wow fadeInUp" data-wow-duration="2s">
+                  <div class="plan-ttl">
+                     <span>Enterprise</span>
+                     <h3>35.000.000<br><strong class="plan-time">VND/năm</strong></h3>
+                  </div>
+                  
+                  <ul>
+                     <li class="yes"><span>Limited Indtall</span></li>
+                     <li class="yes"><span>Unlimited Downlaod</span></li>
+                     <li class="yes"><span>Free One Year Support</span></li>
+                     <li class="no"><span>Free 15GB Linux Hosing</span></li>
+                     <li class="no"><span>30GB Storage</span></li>
+
+                  </ul>
+                  <div class="plan-btn"><a href="#">choose plan</a></div>
+               </div> 
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 pos module">
+               <div class="plan wow fadeInUp" data-wow-duration="2s">
+                  <div class="plan-ttl">
+                     <span>Ultimate</span>
+                     <h3>Liên hệ</h3>
+                  </div>
+                  
+                  <ul>
+                     <li class="yes"><span>Limited Indtall</span></li>
+                     <li class="yes"><span>Unlimited Downlaod</span></li>
+                     <li class="yes"><span>Free One Year Support</span></li>
+                     <li class="no"><span>Free 15GB Linux Hosing</span></li>
+                     <li class="no"><span>30GB Storage</span></li>
+
+                  </ul>
+                  <div class="plan-btn"><a href="#">choose plan</a></div>
+               </div> 
+            </div>
          </div>
-        </div>
       </div>
 		
         
@@ -680,7 +710,7 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
  <!-- pricing End-->  
  
  <!-- Team--> 
-   <div class="section10" id="team">
+   <!-- <div class="section10" id="team">
        <div class="container">
        <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
@@ -763,11 +793,11 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
           </div>
       </div>  
      </div>
-   </div> 
+   </div>  -->
   <!-- team End-->  
   
   <!-- Blog--> 
-   <div class="section16" id="blog">
+   <!-- <div class="section16" id="blog">
        <div class="container">
        <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
@@ -815,7 +845,7 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
           
       </div>  
      </div>
-   </div> 
+   </div>  -->
   <!-- blog End-->  
   
  <!-- Get Download Link--> 
@@ -824,11 +854,11 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
        <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="heading">
-                  <span>are you ready ?</span>
+                  <span>Tiếp theo?</span>
                   <h2>Cloudjet KPI</h2>
                </div>
                <p>
-                  Khi hoàn tất quá trình tuyển dụng và đào tạo nhân viên mới, việc tiếp theo cần phải thực hiện là quản lý năng suất và đánh giá KPI của họ một cách lý tính. <br> Cloudjet KPI sẽ giúp bạn đánh giá và quản lý nhân sự dễ dàng, nhanh chóng và lý tính hơn.
+                  Khi hoàn tất quá trình tuyển dụng và đào tạo nhân viên mới, việc tiếp theo cần phải thực hiện là quản lý năng suất và đánh giá KPI của họ một cách lý tính. Cloudjet KPI sẽ giúp bạn đánh giá và quản lý nhân sự dễ dàng, nhanh chóng và lý tính hơn.
                </p>
               <div class="getbtn"> <a href="#" class="get">Tìm hiểu thêm</a></div>
           </div>
@@ -867,7 +897,7 @@ seing industry Lorem Ipsum has been standarddummy text ever since the when Lorem
    <div class="section14">
        <div class="container">
        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4">
+          <!-- <div class="col-lg-4 col-md-4 col-sm-4">
              <div class="fool-box wow fadeInDown" data-wow-duration="1s">
                 <i class="icofont icofont-download-alt"></i>
                 <div class="footer-box-content">
@@ -877,9 +907,9 @@ software to get started now</p>
 					<a href="#" class="acc">download</a>
                 </div>
              </div>
-          </div>
+          </div> -->
           
-          <div class="col-lg-4 col-md-4 col-sm-4">
+          <!-- <div class="col-lg-4 col-md-4 col-sm-4">
              <div class="fool-box wow fadeInDown" data-wow-duration="2s">
                 <i class="icofont icofont-phone"></i>
                 <div class="footer-box-content">
@@ -900,7 +930,7 @@ our technical team now</p>
 					<a href="#" class="acc">Chat now</a>
                 </div>
              </div>
-          </div>
+          </div> -->
           <!-- Contact Details End-->
         </div>
       </div>
@@ -910,16 +940,12 @@ our technical team now</p>
 				<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             	<div class="footer-copy">
-		            <p>© Copyright 2016 ProSoft. Designed by <a href="https://graphicriver.net/user/kalanidhithemes" target="_blank"> Kalanidhi Themes </a></p>
+		            <p>© Copyright 2019 <a href="http://cloudjetkpi.com">Cloudjet Solutions</a></p>
                 </div>
 			</div>
            	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="foot-social">
-               <a href="#"><i class="icofont icofont-social-facebook"></i></a>
-               <a href="#"><i class="icofont icofont-social-twitter"></i></a>
-               <a href="#"><i class="icofont icofont-social-google-plus"></i></a>
-               <a href="#"><i class="icofont icofont-social-pinterest"></i></a>
-               <a href="#"><i class="icofont icofont-social-youtube-play"></i></a>
+               <a href="https://www.facebook.com/cloudjetsolutions/"><i class="icofont icofont-social-facebook"></i></a>
             </div>
             </div>
             	</div>
