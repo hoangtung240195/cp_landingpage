@@ -1,120 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="One Page Corporate HTML Template">
-    <meta name="author" content="">
-    <link rel="icon" href="images/logo-icon.png">
-    
-    <!-- Title -->
-    <title>Cloudjet Potential - Giải pháp quản trị tuyển dụng</title>
-    
-    <!-- Necessary CSS Files -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">	 	<!-- Google Font -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">												<!-- bootstrap  -->
-    <link href="css/style.css" rel="stylesheet">														<!-- Template Main css  -->
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />											<!-- Client Logo Slider  -->
-    <link rel="stylesheet" type="text/css" href="css/slick.css">										<!-- Testimonial Slider -->
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">									<!-- Testimonial Slider -->
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />				<!-- Video Popup -->
-    <link rel="stylesheet" href="css/animate.css">														<!-- Wow Animation CSS -->
-    <link rel="stylesheet" type="text/css" href="css/YouTubePopUp.css">									<!-- Youtube Video Popup CSS -->
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content="One Page Corporate HTML Template">
+      <meta name="author" content="">
+      <link rel="icon" href="images/logo-icon.png">
 
-	<!--RESPONSIVE TAB -->
-        <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
-    
+      <!-- Title -->
+      <title>Cloudjet Potential - Giải pháp quản trị tuyển dụng</title>
 
+      <!-- Necessary CSS Files -->
+      <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">	 	<!-- Google Font -->
+      <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- bootstrap  -->
+      <link href="css/style.css" rel="stylesheet"> <!-- Template Main css  -->
+      <link href="css/jquery.bxslider.css" rel="stylesheet" /> <!-- Client Logo Slider  -->
+      <link rel="stylesheet" type="text/css" href="css/slick.css"> <!-- Testimonial Slider -->
+      <link rel="stylesheet" type="text/css" href="css/slick-theme.css"> <!-- Testimonial Slider -->
+      <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"
+         media="screen" /> <!-- Video Popup -->
+      <link rel="stylesheet" href="css/animate.css"> <!-- Wow Animation CSS -->
+      <link rel="stylesheet" type="text/css" href="css/YouTubePopUp.css"> <!-- Youtube Video Popup CSS -->
+      <link rel="stylesheet" type="text/css" href="css/cjs-custom.css">
+      <!--RESPONSIVE TAB -->
+      <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css"/>
+   </head>
+   <body>
 
-  </head>
-  <body>
-
-   <!-- Messenger chat-->
+   <!-- Load Facebook SDK for JavaScript -->
    <div id="fb-root"></div>
    <script>
-               window.fbAsyncInit = function() {
-               FB.init({
-                  xfbml            : true,
-                  version          : 'v3.3'
-               });
-               };
-   
-               (function(d, s, id) {
-               var js, fjs = d.getElementsByTagName(s)[0];
-               if (d.getElementById(id)) return;
-               js = d.createElement(s); js.id = id;
-               js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-               fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-   
-   <div class="fb-customerchat" attribution=setup_tool page_id="430777803697909" logged_in_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?" logged_out_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?">
+   window.fbAsyncInit = function() {
+      FB.init({
+         xfbml            : true,
+         version          : 'v3.3'
+      });
+   };
+
+   (function(d, s, id) {
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) return;
+   js = d.createElement(s); js.id = id;
+   js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+   fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));</script>
+
+   <!-- Your customer chat code -->
+   <div class="fb-customerchat"
+   attribution=setup_tool
+   page_id="430777803697909">
    </div>
-   <!-- End chat -->
 
-  <div class="se-pre-con"></div>
-  <!-- header -->
-    <div class="header" id="header">
-       <div class="container">
-          <div class="row header-top" data-spy="affix" data-offset-top="70">
-          <div class="container">
-				<div class="row">
-             <div class="col-lg-3 col-md-3">
-               <div class="logo"><a href="#"><img style="height:50px;" src="images/CP full-white.png" alt="logo"></a></div>
-                 <div id="menu-icon"><span></span><span></span><span></span></div>
-                 <div class="clear"></div>
+      <div class="se-pre-con"></div>
+      <!-- header -->
+      <div class="header" id="header">
+         <div class="container">
+            <div class="row header-top" data-spy="affix" data-offset-top="70">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-3 col-md-3">
+                        <div class="logo"><a href="#"><img style="height:50px;"
+                                 src="images/CP full-white.png" alt="logo"></a></div>
+                        <div id="menu-icon"><span></span><span></span><span></span></div>
+                        <div class="clear"></div>
 
-             </div>
-             <div class="col-lg-9 col-md-9" id="menu">
-               <div class="menu">
-                  <ul>
-                    <li><a href="#header">Trang chủ</a></li>
-                    <li><a href="#features">Tính năng</a></li>
-                    <li><a href="#video">Video</a></li>
-                    <li><a href="#screens">Giao diện</a></li>
-                    <li><a href="#testimonials">Đánh giá</a></li>
-                    <li><a href="#pricing">Chi phí</a></li>
-                    <li><a href="#team">Về chúng tôi</a></li>
-                    <!-- <li><a href="#blog">Blog</a></li> -->
-                    <li><a href="#freetrial">Đăng ký ngay</a></li>
-
-                  </ul>
+                     </div>
+                     <div class="col-lg-9 col-md-9" id="menu">
+                        <div class="menu">
+                           <ul>
+                              <li><a href="#header">Trang chủ</a></li>
+                              <li><a href="#features">Tính năng</a></li>
+                              <!-- <li><a href="#video">Video</a></li> -->
+                              <li><a href="#screens">Giao diện</a></li>
+                              <!-- <li><a href="#testimonials">Đánh giá</a></li> -->
+                              <li><a href="#pricing">Chi phí</a></li>
+                              <!-- <li><a href="#team">Về chúng tôi</a></li> -->
+                              <!-- <li><a href="#blog">Blog</a></li> -->
+                              <li><a href="#freetrial">Đăng ký ngay</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
                </div>
-             </div>
-             	</div>
-			</div>
 
-          </div>
-          
-          <div class="row">
-             <div class="col-lg-12">
-                <h1 class="wow fadeInDown">Cloudjet Potential <br>công nghệ hóa tuyển dụng  </h1>
-                <p class="wow fadeInDown">Tiết kiệm thời gian, nguồn lực và tài chính trong tuyển dụng thông qua giải pháp công nghệ trọn gói <br> từ tiếp nhận, đánh giá, gửi email, phỏng vấn, ra quyết định tuyển dụng đến lưu trữ hồ sơ của ứng viên.</p>
-                <div class="bnts wow fadeInUp">
-                   <a href="#" class="btn2">Dùng thử miễn phí</a>
-                </div>
-             </div>
-          </div>
-          
-			<div class="row">
-				<div class="col-lg-12">
-              <div class="toping">
-				<div class="video-box"> 
-                    <a class="bla-1 video-box-inner" href="https://www.youtube.com/watch?v=1iIZeIy7TqM"> <i class="icofont icofont-play-alt-2 video-play-btn"></i>
-                     <img class="img-responsive" src="images/hero-video-screen.png" class="video-image">
-                    </a>
-				</div>
-                                
-              </div>
-			</div>
-          </div>
-       </div>
-    </div>
-   <!-- header End-->
-   
-   <!--Clients Logo--> 
-   <!-- <div class="section12">
+            </div>
+
+            <div class="row">
+               <div class="col-lg-12">
+                  <h1 class="wow fadeInDown">Cloudjet Potential <br>công nghệ
+                     hóa tuyển dụng </h1>
+                  <p class="wow fadeInDown">Tiết kiệm thời gian, nguồn lực và
+                     tài chính trong tuyển dụng thông qua giải pháp công nghệ
+                     trọn gói <br> từ tiếp nhận, đánh giá, gửi email, phỏng vấn,
+                     ra quyết định tuyển dụng đến lưu trữ hồ sơ của ứng viên.</p>
+                  <div class="bnts wow fadeInUp">
+                     <a href="#" class="btn2">Dùng thử miễn phí</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="toping">
+                     <div class="video-box">
+                        <a class="bla-1 video-box-inner"
+                           href="https://www.youtube.com/watch?v=1iIZeIy7TqM">
+                           <i class="icofont icofont-play-alt-2 video-play-btn"></i>
+                           <img class="img-responsive"
+                              src="images/hero-video-screen.png"
+                              class="video-image">
+                        </a>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- header End-->
+
+      <!--Clients Logo-->
+      <!-- <div class="section12">
        <div class="container">
        <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
@@ -135,158 +143,57 @@
 
       </div>
     </div>  -->
-    <!-- Clients Logo End    --->   
- 	<!-- features -->
-     <div class="section2" id="features">
-       <div class="container">
-          <div class="row">
-          <div class="col-lg-12">
-             <div class="heading">
-                <span>Tính năng</span>
-                <h2>Đơn giản nhưng cực kỳ tiện ích</h2>
-             </div>
-          </div>
-          </div>
-          <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6 module">
-             <div class="f-box wow fadeInUp" data-wow-duration="1s">
-               <div class="f-img"><img src="images/icon1.png" alt="f1"></div>
-               <a href="#">Quản lý ứng viên hiệu quả</a>
-               <p>Các công cụ được tích hợp sẵn giúp nhà tuyển dụng quản lý hồ sơ của ứng viên dễ dàng hơn.</p>
-             </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-4 col-sm-6 module">
-             <div class="f-box wow fadeInUp" data-wow-duration="2s">
-               <div class="f-img"><img src="images/icon2.png" alt="f2"></div>
-               <a href="#"> Loại bỏ đánh giá chủ quan</a>
-               <p>Thảo luận và đánh giá cùng với đội nhóm sẽ làm giảm sự cảm tính của người trực tiếp phỏng vấn về ứng viên tiềm năng.</p>
-             </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-4 col-sm-6 module">
-             <div class="f-box wow fadeInUp" data-wow-duration="3s">
-               <div class="f-img"><img src="images/icon3.png" alt="f3"></div>
-               <a href="#">Tiết kiệm thời gian và công sức</a>
-               <p>Đăng tuyển, đánh giá, chấm điểm ứng viên nhanh chóng và lưu trữ dữ liệu một cách tự động.</p>
-             </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-4 col-sm-6 module">
-             <div class="f-box wow fadeInUp" data-wow-duration="3s">
-               <div class="f-img"><img src="images/icon4.png" alt="f4"></div>
-               <a href="#">Phân tích, xác định kênh tuyển dụng hiệu quả</a>
-               <p>Bằng việc xác định những nguồn được ứng tuyển nhiều nhất, nhà tuyển dụng sẽ dễ dàng nắm bắt những những kênh tuyển dụng hiệu quả, giúp tiết kiệm thời gian và chi phí cho quá trình tuyển dụng nhân sự mới.</p>
-             </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-4 col-sm-6 module">
-             <div class="f-box wow fadeInUp" data-wow-duration="3s">
-               <div class="f-img"><img src="images/icon5.png" alt="f5"></div>
-               <a href="#">Quy trình bài bản</a>
-               <p>Toàn bộ quá trình tuyển dụng được chuẩn hóa từ A đến Z. Từ website tuyển dụng đến lưu trữ, đánh giá chấm điểm ứng viên, gửi mail theo quy trình và nhắc lịch phỏng vấn.
-               </p>
-             </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-4 col-sm-6 module">
-             <div class="f-box wow fadeInUp" data-wow-duration="3s">
-               <div class="f-img"><img src="images/icon6.png" alt="f6"></div>
-               <a href="#">Dễ sử dụng</a>
-               <p>Mọi tính năng được tối ưu cho người dùng ở mọi bộ phận phòng ban đều dễ dàng sử dụng, không đòi hỏi kỹ năng tin học.</p>
-             </div>
-          </div>
-          
-          
-          </div>
-       </div>
-       </div>
-	<!-- features End-->
- 
- 	<!-- Sign Up -->
-    <div class="section1">
-       <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-               <div class="search-sec">
-                  <!-- <span>Đăng ký nhận tài khoản miễn phí 30 ngày</span> -->
-                  <h2>Đăng ký nhận tài khoản miễn phí 30 ngày</h2>
+      <!-- Clients Logo End    --->
+      <!-- features -->
+      <div class="section2" id="features">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="heading">
+                     <span>Tính năng</span>
+                     <h2>Đơn giản nhưng cực kỳ tiện ích</h2>
+                  </div>
                </div>
             </div>
-          </div>
-          
-          <div class="row">
-  <div class="col-lg-12">
-    <div class="grop">
-    
-    <div class="input-group">
-      <input type="text" class="form-control text1" placeholder="Tên của bạn" style="width:30%;">
-      <input type="text" class="form-control text2" placeholder="Email" style="width:25%;">
-      <input type="text" class="form-control text2" placeholder="Số điện thoại" style="width:25%;">
-      <button class="btn btn-secondary" type="button"  style="width:20%; margin-left: 0px;">Đăng ký</button>
-      
-    </div>
-    
-    <!-- <p>Tạo tài khoản <a href="http://app.cloudjet.work/">MIỄN PHÍ</a> Và dùng thử 30 ngày, chưa yêu cầu thành toán.</p> -->
-    </div>
-  </div>
-</div>
-       </div>
-    </div>   
- 	<!-- start End-->
-    
-    <!-- Description Two Colom-->  
-    <div class="section6">
-       <div class="container">
-
-            
-          <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-6 module">
-          	<div class="content-area">
-               <div class="left-heading">
-                 <span> <img class="wow fadeInDown" src="images/eq-icon.png" alt="icon-image"></span>
-                 <h2 class="wow fadeInUp">Sử dụng Cloudjet Potential</h2>
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-sm-6 module">
+                  <div class="f-box fadeInUp" data-wow-duration="1s">
+                     <div class="f-img"><img src="images/icon1.png" alt="f1"></div>
+                     <a href="#">Quản lý ứng viên hiệu quả</a>
+                     <p>Các công cụ được tích hợp sẵn giúp nhà tuyển dụng quản
+                        lý hồ sơ của ứng viên dễ dàng hơn.</p>
+                  </div>
                </div>
-               <!-- <p class="wow fadeInUp">Lorem Ipsum is simply dummy text the printing and typeseing industry Lorem Ipsum has been standarddummy text ever since the when Lorem Ipsum is simply. -->
-               <!-- </p> -->
-                <div class="nomber-text wow fadeInUp">
-                  <div class="nomber-text-row">
-                     <div class="nomber-text-row-inner">
-                       <span>1.Không còn ngập trong file exel rối mắt.</span>
-                       <p>Dữ liệu được tự động chuyển từ trang tuyển dụng về trang quản lý, tất cả hồ sơ được nằm ngăn nắp trong cùng một nơi.</p>
-                       <p></p>
-                     </div>
-                     <div class="clear"></div>
-                  </div>
-                  
-                  <div class="nomber-text-row">
-                     <div class="nomber-text-row-inner">
-                       <span>2. Không phải in xấp CV đem đến từng phòng ban.</span>
-                       <p>Tất cả người liên quan trong quy trình tuyển dụng đều có thể thấy được thông tin ứng viên một cách rõ ràng bằng một vài cái nhấp chuột thông qua quy trình tự động hóa.</p>
-                       <p></p>
-                     </div>
-                     <div class="clear"></div>
-                  </div>
-                  
-                  <div class="nomber-text-row">
-                     <div class="nomber-text-row-inner">
-                       <span>3. Hạn chế nhân sự “bốc hơi” khi đang thử việc.</span>
-                       <p>Sự phù hợp của ứng viên với tổ chức sẽ được đánh giá kỹ lưỡng khi có sự thảo luận và đóng góp ý kiến của đội nhóm với tính năng đánh giá phối hợp phòng ban, chấm điểm và sàng lọc ứng viên.</p>
-                       <p></p>
-                     </div>
-                     <div class="clear"></div>
-                  </div>
 
-                  <div class="nomber-text-row">
-                     <div class="nomber-text-row-inner">
-                       <span>4. Nhẹ nhàng gửi e-mail và xếp lịch phỏng vấn.</span>
-                       <p>	E-mail được gửi đi một cách tự động, kèm theo là tính năng nhắc nhở lịch phỏng vấn và ghi chú những câu hỏi để rà soát năng lực cũng như thái độ của ứng viên.</p>
-                       <p></p>
-                     </div>
-                     <div class="clear"></div>
+               <div class="col-lg-4 col-md-4 col-sm-6 module">
+                  <div class="f-box fadeInUp" data-wow-duration="2s">
+                     <div class="f-img"><img src="images/icon2.png" alt="f2"></div>
+                     <a href="#"> Loại bỏ đánh giá chủ quan</a>
+                     <p>Thảo luận và đánh giá cùng với đội nhóm sẽ làm giảm sự
+                        cảm tính của người trực tiếp phỏng vấn về ứng viên tiềm
+                        năng.</p>
                   </div>
-                  
-                </div>
+               </div>
+
+               <div class="col-lg-4 col-md-4 col-sm-6 module">
+                  <div class="f-box fadeInUp" data-wow-duration="3s">
+                     <div class="f-img"><img src="images/icon3.png" alt="f3"></div>
+                     <a href="#">Tiết kiệm thời gian và công sức</a>
+                     <p>Đăng tuyển, đánh giá, chấm điểm ứng viên nhanh chóng và
+                        lưu trữ dữ liệu một cách tự động.</p>
+                  </div>
+               </div>
+
+               <div class="col-lg-4 col-md-4 col-sm-6 module">
+                  <div class="f-box fadeInUp" data-wow-duration="3s">
+                     <div class="f-img"><img src="images/icon4.png" alt="f4"></div>
+                     <a href="#">Phân tích, xác định kênh tuyển dụng hiệu quả</a>
+                     <p>Bằng việc xác định những nguồn được ứng tuyển nhiều
+                        nhất, nhà tuyển dụng sẽ dễ dàng nắm bắt những những kênh
+                        tuyển dụng hiệu quả, giúp tiết kiệm thời gian và chi phí
+                        cho quá trình tuyển dụng nhân sự mới.</p>
+                  </div>
+               </div>
 
                <a href="#" class="acc wow fadeInUp">Tạo tài khoản</a>
 			</div>
@@ -310,444 +217,368 @@
                   <span>Tại sao bạn chọn chúng tôi?</span>
                   <h2>Các con số</h2>
                </div>
-          </div>
-      </div>
-      
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 module">
-             <div class="our-box">
-                <img src="images/download.png" alt="download">
-                <div class="down-box">
-                  <div class="cnt"><h3 class="count">01</h3></div>
-                  <span>Kênh quản lý dữ liệu toàn bộ ứng viên</span>
-                </div>
-                
-             </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-4 col-sm-4 module">
-            <div class="our-box">
-                <img src="images/smile.png" alt="smile">
-                <div class="down-box">
-                  <div class="cnt"><h3 class="count">50%</h3><h4>%</h4></div>
-                  <span>Tiết kiệm thời gian so với quy trình thủ công</span>
-                </div>
-                
-             </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-4 col-sm-4 module">
-            <div class="our-box">
-                <img src="images/users.png" alt="users">
-                <div class="down-box">
-                  <div class="cnt"><h3 class="count">100</h3><h4>%</h4></div>
-                  <span>Hồ sơ ứng viên được lưu trữ</span>
-                </div>
-                
-             </div>
-          </div>
-          
-         
-          </div>
-    </div>
-  </div>  
-  <!-- why us End--> 
-    
-	<!-- Video --> 
-    <!-- <div class="section4" id="video">
-       <div class="container">
-          <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 module">
-               <div class="heading">
-                  <span>video</span>
-                  <h2>Xem video của chúng tôi ở đây</h2>
-               </div>
-               <p>Lorem Ipsum is simply dummytext the printing and typeseing industry Lorem Ipsum has been standard.<br />
-dummy text ever since the when an Lorem Ipsum is simply dummytext</p>
 
-            <div class="mac">
-              <a href="https://www.youtube.com/embed/jid2A7ldc_8?autoplay=1" class="various fancybox" ><img src="images/play-btn.png" alt="play-btn"></a>
+               <div class="col-lg-4 col-md-4 col-sm-6 module">
+                  <div class="f-box fadeInUp" data-wow-duration="3s">
+                     <div class="f-img"><img src="images/icon6.png" alt="f6"></div>
+                     <a href="#">Dễ sử dụng</a>
+                     <p>Mọi tính năng được tối ưu cho người dùng ở mọi bộ phận
+                        phòng ban đều dễ dàng sử dụng, không đòi hỏi kỹ năng tin
+                        học.</p>
+                  </div>
+               </div>
+
+
             </div>
-            <div class="video-section-image wow fadeInUp"> <img class="img-responsive" src="images/video-section-image.png" alt="video-screens"> 
+         </div>
+      </div>
+      <!-- features End-->
+
+      <!-- Sign Up -->
+      <!-- <div class="section1">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="search-sec">
+                     <h2>Đăng ký nhận tài khoản miễn phí 30 ngày</h2>
+                  </div>
+               </div>
             </div>
-          </div>
-       </div>
-     </div>
-   </div>  -->
-	<!-- video End  -->
-    
-  	<!-- Description Two Colom--> 
-      <!-- <div class="section3">
-       <div class="container">
-          <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-5 col-md-push-7">
-             <div class="left-heading">
-                <span> <img src="images/pc.png" alt="secton-image"></span>
-                <h2>Tính năng</h2>
-                <p class="p">
-                     <ul>
+
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="grop">
+
+                     <div class="input-group">
+                        <input type="text" class="form-control text1"
+                           placeholder="Tên của bạn" style="width:30%;">
+                        <input type="text" class="form-control text2"
+                           placeholder="Email" style="width:25%;">
+                        <input type="text" class="form-control text2"
+                           placeholder="Số điện thoại" style="width:25%;">
+                        <button class="btn btn-secondary" type="button"
+                           style="width:20%; margin-left: 0px;">Đăng ký</button>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> -->
+      <!-- start End-->
+
+      <!-- Description Two Colom-->
+      <div class="section6">
+         <div class="container">
+
+
+            <div class="row">
+               <div class="col-xs-12 col-sm-12 col-md-6 module">
+                  <div class="content-area">
+                     <div class="left-heading">
+                        <span> <img class=" fadeInDown"
+                              src="images/eq-icon.png" alt="icon-image"></span>
+                        <h2 class="fadeInUp">Sử dụng Cloudjet Potential</h2>
+                     </div>
+                     <div class="fadeInUp">
+                        <div class="nomber-text-row">
+                           <div class="nomber-text-row-inner">
+                              <span>1.Không còn ngập trong file exel rối mắt.</span>
+                              <p>Dữ liệu được tự động chuyển từ trang tuyển dụng
+                                 về trang quản lý, tất cả hồ sơ được nằm ngăn
+                                 nắp trong cùng một nơi.</p>
+                              <p></p>
+                           </div>
+                           <div class="clear"></div>
+                        </div>
+
+                        <div class="nomber-text-row">
+                           <div class="nomber-text-row-inner">
+                              <span>2. Không phải in xấp CV đem đến từng phòng
+                                 ban.</span>
+                              <p>Tất cả người liên quan trong quy trình tuyển
+                                 dụng đều có thể thấy được thông tin ứng viên
+                                 một cách rõ ràng bằng một vài cái nhấp chuột
+                                 thông qua quy trình tự động hóa.</p>
+                              <p></p>
+                           </div>
+                           <div class="clear"></div>
+                        </div>
+
+                        <div class="nomber-text-row">
+                           <div class="nomber-text-row-inner">
+                              <span>3. Hạn chế nhân sự “bốc hơi” khi đang thử
+                                 việc.</span>
+                              <p>Sự phù hợp của ứng viên với tổ chức sẽ được
+                                 đánh giá kỹ lưỡng khi có sự thảo luận và đóng
+                                 góp ý kiến của đội nhóm với tính năng đánh giá
+                                 phối hợp phòng ban, chấm điểm và sàng lọc ứng
+                                 viên.</p>
+                              <p></p>
+                           </div>
+                           <div class="clear"></div>
+                        </div>
+
+                        <div class="nomber-text-row">
+                           <div class="nomber-text-row-inner">
+                              <span>4. Nhẹ nhàng gửi e-mail và xếp lịch phỏng
+                                 vấn.</span>
+                              <p> E-mail được gửi đi một cách tự động, kèm theo
+                                 là tính năng nhắc nhở lịch phỏng vấn và ghi chú
+                                 những câu hỏi để rà soát năng lực cũng như thái
+                                 độ của ứng viên.</p>
+                              <p></p>
+                           </div>
+                           <div class="clear"></div>
+                        </div>
+
+                     </div>
+
+                     <a href="#freetrial" class="acc wow fadeInUp">Liên hệ</a>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-sm-12 col-md-6 module">
+                  <div class="img3">
+                     <img class="img-responsive" src="images/dashboard.png"
+                        alt="icon-image">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Description End-->
+
+      <!-- Why us - Statistics-->
+      <div class="section5 dark-section dark-color-bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="heading">
+                     <span>Tại sao bạn chọn chúng tôi?</span>
+                     <h2>Các con số</h2>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-sm-4 module">
+                  <div class="our-box">
+                     <img src="images/download.png" alt="download">
+                     <div class="down-box">
+                        <div class="cnt"><h3 class="count">01</h3></div>
+                        <span>Kênh quản lý dữ liệu toàn bộ ứng viên</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-4 col-md-4 col-sm-4 module">
+                  <div class="our-box">
+                     <img src="images/smile.png" alt="smile">
+                     <div class="down-box">
+                        <div class="cnt"><h3 class="count">50%</h3><h4>%</h4></div>
+                        <span>Tiết kiệm thời gian so với quy trình thủ công</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-4 col-md-4 col-sm-4 module">
+                  <div class="our-box">
+                     <img src="images/users.png" alt="users">
+                     <div class="down-box">
+                        <div class="cnt"><h3 class="count">100</h3><h4>%</h4></div>
+                        <span>Hồ sơ ứng viên được lưu trữ</span>
+                     </div>
+                  </div>
+               </div>
+
+
+            </div>
+         </div>
+      </div>
+      <!-- why us End-->
+
+      <!-- Description Two Colom-->
+      <div class="section3">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12 col-sm-12 col-md-5 col-md-push-7">
+                  <div class="left-heading">
+                     <span> <img src="images/pc.png" alt="secton-image"></span>
+                     <h2>Tính năng</h2>
+                     <p class="p">
+                        <ul>
                            <li>Quản Lý Và Lưu Trữ Hồ Sơ Ứng Viên</li>
                            <li>Tạo Tính Năng Riêng Theo Quy Trình Của Công Ty</li>
                            <li>Thảo Luận, Đánh Giá Cùng Đội Nhóm</li>
                            <li>Tự Động Gửi E-Mail thông báo</li>
                         </ul>
-                </p>
-                <div class="clear"> </div>
-                <a href="#" class="acc">Tạo tài khoản</a>
+                     </p>
+                     <div class="clear"> </div>
+                     <a href="#" class="acc">Tạo tài khoản</a>
 
-             </div>
-          </div> 
-          
-          <div class="col-xs-12 col-sm-12 col-md-7 col-md-pull-5">
-             <div class="two-colom-image">
-                <img class="img-responsive" src="images/img1.png" alt="img1">
-             </div>
-          </div>
-          
-                 
-        </div>
-      </div>
-      </div>   -->
-    <!-- Description End-->   
-     
-	<!-- Description Two Colom--> 
-      <!-- <div class="section-two-colom">
-       <div class="container">
-          <div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-5 ">
-             <div class="content-area-second">
-             	<div class="left-heading">
-                <span> <img src="images/system-icon.png" alt="system-icon"></span>
-                <h2>Đồng bộ dữ liệu thời gian thực</h2>
-                </div> -->
-                <!-- <p class="p">
-               Lorem Ipsum is simply dummy text the printing and typeseing industry Lorem Ipsum has been standarddummy text ever since ting and typeseing <strong class="highlited-text">Hightlight Text </strong>industry Lorem Ipsum has been standarddummy text ever since the when. Lorem Ipsum is simply dummy text the printing and typeseing.Lorem Ipsum has been standarddummy text ever since the when an Lorem.
-				<div class="clear"> </div>
-                
-                </p> -->
-                <!-- <a href="#" class="acc">Tạo tài khoản ngay</a>
-             </div>
-          </div>
-          
-          <div class="col-xs-12 col-sm-12 col-md-7 ">
-             <div class="two-colom-image-right wow fadeInRight">
-                <img class="img-responsive" src="images/system-img.png" alt="img1">
-             </div> -->
-		<!-- </div>
-          
-        </div>
-      </div>
-      </div>   -->
-    <!-- Description End--> 
-    
-    <!-- Screen section --> 
-	<!-- <div class="screen-section dark-section dark-color-bg" id="screens">
-    	<div class="container">
-		<div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-             <div class="heading">
-                  <span>Xem qua</span>
-                  <h2>Chi tiết các tính năng</h2>
+                  </div>
                </div>
-          </div>
-        </div>
-        <div class="pro_det_tab_main">
-            <div id="parentHorizontalTab">
-                <ul class="resp-tabs-list hor_1">
-                    <li>Quản lý và lưu trữ hồ sơ ứng viên</li>
-                    <li>Tạo tính năng riêng theo quy trình của công ty</li>
-                    <li>Thảo luận, đánh giá cùng đội nhóm</li>
-                    <li>Tự động gửi e-mail</li>
-                </ul>
-                <div class="resp-tabs-container hor_1">
-                    <div>
-                        <p>
-                        </p>
-                        <img class="tab-screen-image" src="images/screen-tab-1.png" alt="screen-image" >
-                        
-                    </div>
-                    <div>
-                       <img class="tab-screen-image" src="images/screen-tab-2.png" alt="screen-image">
-    
-                    </div>
-                    <div>
-                        <img class="tab-screen-image" src="images/screen-tab-3.png" alt="screen-image">
-                    </div>
-                    <div>
-                        <p>
-                            
-                        </p>
-                        <img class="tab-screen-image" src="images/screen-tab-4.png" alt="screen-image">
-                    </div>
-                </div>
+
+               <div class="col-xs-12 col-sm-12 col-md-7 col-md-pull-5">
+                  <div class="two-colom-image">
+                     <img class="img-responsive" src="images/img1.png"
+                        alt="img1">
+                  </div>
+               </div>
+
+
             </div>
-        </div>
-		</div>
-    </div> -->
-    <!-- End Screen section -->     
-      
-  <!-- Testimonials--> 
-     <!-- <div class="section8" id="testimonials">
-       <div class="con">
-       <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-               <div class="heading">
-                  <span>Chia sẻ của khách hàng</span>
-                  <h2>Đang sử dụng giải pháp Cloudjet Potential</h2>
-               </div>
-          </div>
-      </div>
-      </div>
-      <div class="container-fluid">
-      <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">    
-    
-            <section class="center slider">
-            
-                        <div>
-                          <div class="li">
-                         <div class="photo"><img src="images/u1.png" alt="user-pic"></div>
-                           <div class="slide1">
-                            
-                             <p>Sản phẩm giúp ích rất nhiều cho chúng tôi trong việc quản lý hồ sơ ứng viên, tiết kiêm rất nhiều thời gian và tiền bạc.</p>
-                      <span>- Hoàng Tùng</span>
-                           </div> 
-                           </div>
-                        </div>
-                        
-                        <div>
-                        <div class="li">
-                         <div class="photo"><img src="images/u2.png" alt="user-pic"></div>
-                           <div class="slide1">
-                            
-                             <p>Chúng tôi thấy hiệu quả rõ rệt trước và sau khi ứng dụng hệ thống Cloudjet Potentail</p>
-                      <span>- Simmy Ilona</span>
-                           </div> 
-                           </div>
-                        </div>
-            
-                        <div>
-                        <div class="li">
-                         <div class="photo"><img src="images/u3.png" alt="user-pic"></div>
-                           <div class="slide1">
-                            
-                             <p>Tôi sẽ giới thiệu phần mềm </p>
-                      <span>- Sam Tikota</span>
-                           </div> 
-                           </div>
-                        </div>
-                        
-            
-                        <div>
-                          <div class="li">
-                         <div class="photo"><img src="images/u1.png" alt="user-pic"></div>
-                           <div class="slide1">
-                            
-                             <p>Lorem Ipsum is simply dummy text of the printing and typing indus try Lorem Ipsum has been the indus
-                    try's standard dummy text Lorem is simply dummy text of the 
-                    printing and typeseing industry. Lorem</p>
-                      <span>- Devil Jhon</span>
-                           </div> 
-                           </div>
-                        </div>
-                        
-                        <div>
-                        <div class="li">
-                         <div class="photo"><img src="images/u2.png" alt="user-pic"></div>
-                           <div class="slide1">
-                            
-                             <p>Lorem Ipsum is simply dummy text of the printing and typing indus try Lorem Ipsum has been the indus
-                    try's standard dummy text Lorem is simply dummy text of the 
-                    printing and typeseing industry. Lorem</p>
-                      <span>- Simmy Ilona</span>
-                           </div> 
-                           </div>
-                        </div>
-            
-                        <div>
-                        <div class="li">
-                         <div class="photo"><img src="images/u3.png" alt="user-pic"></div>
-                           <div class="slide1">
-                            
-                             <p>Lorem Ipsum is simply dummy text of the printing and typing indus try Lorem Ipsum has been the indus
-                    try's standard dummy text Lorem is simply dummy text of the 
-                    printing and typeseing industry. Lorem</p>
-                      <span>- Sam Tikota</span>
-                           </div> 
-                           </div>
-                        </div>
-                        
-                        
-                        
-  </section> 
-    
-       </div>
-     </div>
-   </div>
- </div> -->
-  <!-- testimonials End--> 
-  
-  <!-- Pricing--> 
-   <div class="section9 dark-section " id="pricing">
-      <div class="pricing-bg dark-color-bg">
          </div>
-      <div class="container">
-      
-      <div class="pricing-inner-container">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-               <div class="heading">
-                  <span>chi phí</span>
-                  <h2>Các gói dịch vụ</h2>
-               </div>
-               <div class="photo"><img src="images/pricing list.png" alt="user-pic"></div>
-
-            </div>
       </div>
-   </div>    
+      <!-- Description End-->
 
-   <div class="section9 dark-section " id="pricing">
-         <div class="pricing-bg dark-color-bg">
-            </div>
+      <!-- Description Two Colom-->
+      <div class="section-two-colom">
          <div class="container">
-         
-         <div class="pricing-inner-container">
-               <div class="col-lg-12 col-md-12 col-sm-12">
-                     
+            <div class="row">
+               <div class="col-xs-12 col-sm-12 col-md-5">
+                  <div class="content-area-second">
+                     <div class="left-heading">
+                        <span> <img src="images/system-icon.png"
+                              alt="system-icon"></span>
+                        <h2>Đồng bộ dữ liệu thời gian thực</h2>
+                     </div>
+                     <a href="#" class="acc">Tạo tài khoản ngay</a>
+                  </div>
                </div>
+
+               <div class="col-xs-12 col-sm-12 col-md-7">
+                  <div class="two-colom-image-right wow fadeInRight">
+                     <img class="img-responsive" src="images/system-img.png"
+                        alt="img1">
+                  </div>
+               </div>
+
+            </div>
          </div>
-      </div>   
-  
- <!-- Get Download Link--> 
-   <div class="section11 dark-section">
-       <div class="container">
-       <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="heading" >
-                  <span>Tiếp theo?</span>
-                  <h2>Cloudjet KPI</h2>
-               </div>
-               <p>
-                  Khi hoàn tất quá trình tuyển dụng và đào tạo nhân viên mới, việc tiếp theo cần phải thực hiện là quản lý năng suất và đánh giá KPI của họ một cách lý tính. Cloudjet KPI sẽ giúp bạn đánh giá và quản lý nhân sự dễ dàng, nhanh chóng và lý tính hơn.
-               </p>
-              <div class="getbtn"> <a href="#" class="get">Tìm hiểu thêm</a></div>
-          </div>
-       </div>
-    </div>
-  </div>  
-  <!-- Get Download Link End-->   
-  
-    <!-- Freetrial--> 
-   <div class="section13" >
-       <div class="container">
-       <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 wow flipInX" data-wow-duration="3s">
-             <div class="heading" style="color:#3e355f;">
-                  <span>Let’s start</span>
-                  <h2>Dùng thử miễn phí 30 ngày</h2>
-               </div>
-               
-               <div class="form">
-                  <input type="text" placeholder="Tên của bạn">
-                  <input type="text" placeholder="Email đăng kí">
-                  <input type="text" placeholder="Số điện thoại của bạn">
-                  <input type="text" placeholder="Tên công ty">
-                  <button>Nhận tài khoản</button>
-                  <!-- <p>Create Your <a href="#">FREE</a> Account Now & Get 30 days FREE trial. No credit card required</p> -->
-
-               </div>
-          </div>
-       </div>
-     </div>
-   </div>   
-    <!-- freetrial End--> 
-    
-     <!-- footer--> 
-     <!-- Contact Details-->  
-   <!-- <div class="section14">
-       <div class="container">
-       <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4">
-             <div class="fool-box wow fadeInDown" data-wow-duration="1s">
-                <i class="icofont icofont-download-alt"></i>
-                <div class="footer-box-content">
-	                <h4>Download now </h4>
-    	            <p>Sign up and download instant 
-software to get started now</p>
-					<a href="#" class="acc">download</a>
-                </div>
-             </div>
-          </div>  -->
-          
-          <div class="col-lg-4 col-md-4 col-sm-4">
-             <div class="fool-box wow fadeInDown" data-wow-duration="2s">
-                <i class="icofont icofont-phone"></i>
-                <div class="footer-box-content">
-	                <h4>Liên hệ</h4>
-    	            <p>Nếu bạn có thắc mắc, vui lòng liên hệ chúng tôi</p>
-					<a href="#" class="">+84 (028) 668 08 662</a>
-                </div>
-             </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-4 col-sm-4">
-             <div class="fool-box wow fadeInDown" data-wow-duration="3s">
-                <i class="icofont icofont-comment"></i>
-                <div class="footer-box-content">
-	                <h4>Nhắn tin để được tư vấn</h4>
-    	            <p>Nếu bạn cần tư vấn hỗ trợ, liên hệ với chúng tôi</p>
-					<a href="#" class="acc">Nhắn tin</a>
-                </div>
-             </div>
-          <!-- </div> -->
-           <!-- Contact Details End --> 
-        </div>
       </div>
-      
-		<div class="last-footer">
-        	<div class="container">
-				<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            	<div class="footer-copy">
-		            <p>© Copyright 2019 <a href="http://cloudjetkpi.com">Cloudjet Solutions</a></p>
-                </div>
-			</div> 
-           	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="foot-social">
-               <a href="https://www.facebook.com/cloudjetsolutions/"><i class="icofont icofont-social-facebook"></i></a>
-            </div>
-            </div>
-            	</div>
-			</div>
-		</div>
-    </div>   
-     
-     
-     <!-- footer End     
+      <!-- Description End-->
 
-	<script src="js/jquery-1.9.1.min.js"></script> 													<!-- For screen gallery tab -->
-    <script src="js/jquery.min.js"></script>														<!-- librery --> 
-    <script src="js/bootstrap.min.js"></script>														<!-- bootstrap --> 
-    <script src="js/jquery.bxslider.min.js"></script>												<!-- For Logos Slider --> 
-    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>						<!-- For Testimonial Slider --> 
-	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>						<!-- For Video Pop up --> 
-    <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>						<!-- For Screenshot Details --> 
-    <script type="text/javascript" src="js/jquery.gallery.js"></script>								<!-- For Screenshot Details --> 
-    <script src="js/easyResponsiveTabs.js"></script>												<!-- For screen gallery tab -->
-    <script src="js/wow.min.js"></script>															<!--Wow animation js -->
-    
-    <script src="js/retina.js"></script>                      <!-- Retina js -->
-	<script src="js/retina.min.js"></script>                  <!-- Retina js -->
-    
-    
-    <script type="text/javascript" src="js/YouTubePopUp.jquery.js"></script> 						<!-- Youtube Video Popup js -->
-	<script type="text/javascript">
+
+      <!-- Pricing-->
+      <div class="section9 dark-section"id="pricing">
+         <div class="pricing-bg dark-color-bg"></div>
+         <div class="container">
+
+            <div class="pricing-inner-container">
+               <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="heading">
+                     <span>chi phí</span>
+                     <h2>Các gói dịch vụ</h2>
+                  </div>
+                  <div class="photo"><img src="images/pricing list.jpg"
+                        alt="user-pic" style="width: 100%"></div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- pricing End-->
+
+      <!-- Freetrial-->
+      <div class="section13" id="freetrial">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 wow flipInX"
+                  data-wow-duration="3s">
+                  <div class="heading">
+                     <span>Bắt đầu ngay</span>
+                     <h2>Dùng thử miễn phí 30 ngày</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- freetrial End-->
+
+      <!-- footer-->
+      <!-- Contact Details-->
+      <div class="section14">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="fool-box fadeInDown" data-wow-duration="2s">
+                     <i class="icofont icofont-phone"></i>
+                     <div class="footer-box-content">
+                        <h4>Gọi ngay hotline</h4>
+                        <p>Nếu bạn có nhu cầu hoặc bất kỳ thắc mắc cần tư vấn</p>
+                        <h4>(028) 668 08 662</h4>
+                        <h4>(028) 665 99 998</h4>
+                        <h4>(028) 397 98 929</h4>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="fool-box fadeInDown" data-wow-duration="3s">
+                     <i class="icofont icofont-comment"></i>
+                     <div class="footer-box-content">
+                        <h4>Chat với chúng tôi</h4>
+                        <p>Nếu bạn cần hỗ trợ hệ thống hoặc tìm hiểu thêm về dịch vụ</p>
+                        <a href="https://m.me/cloudjetsolutions" class="acc" style="margin-right: 20px; background: white; color:#083b8a !important;"> <img src="/images/logo_messenger.svg" style="width: 30px; height: 100%;"></img> Messenger</a> <br>
+                        <a href="https://zalo.me/279948084336990985" class="acc" style="background: white; color:#083b8a !important;"><img src="/images/logo_zalo.svg" style="width: 30px; height: 100%;"></img> Zalo Chat</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Contact Details End -->
+            </div>
+         </div>
+
+         <div class="last-footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                     <div class="footer-copy">
+                        <p>© Copyright 2019 <a href="http://cloudjetkpi.com">Cloudjet
+                              Solutions</a></p>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                     <div class="foot-social">
+                        <a href="https://www.facebook.com/cloudjetsolutions/"><i
+                              class="icofont icofont-social-facebook"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!-- footer End-->
+
+      <script src="js/jquery-1.9.1.min.js"></script> <!-- For screen gallery tab -->
+      <script src="js/jquery.min.js"></script> <!-- librery -->
+      <script src="js/bootstrap.min.js"></script> <!-- bootstrap -->
+      <script src="js/jquery.bxslider.min.js"></script> <!-- For Logos Slider -->
+      <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+      <!-- For Testimonial Slider -->
+      <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+      <!-- For Video Pop up -->
+      <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+      <!-- For Screenshot Details -->
+      <script type="text/javascript" src="js/jquery.gallery.js"></script> <!-- For Screenshot Details -->
+      <script src="js/easyResponsiveTabs.js"></script> <!-- For screen gallery tab -->
+      <script src="js/wow.min.js"></script> <!--Wow animation js -->
+
+      <script src="js/retina.js"></script> <!-- Retina js -->
+      <script src="js/retina.min.js"></script> <!-- Retina js -->
+
+
+      <script type="text/javascript" src="js/YouTubePopUp.jquery.js"></script>
+      <!-- Youtube Video Popup js -->
+      <script type="text/javascript">
 		jQuery(function(){
 			jQuery("a.bla-1").YouTubePopUp();
 			jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
 		});
 	</script>
-
-    <script>
+      <script>
 	$(document).ready(function(){
 		
 	//Screenshot in details slider ==============================================
@@ -870,7 +701,5 @@ software to get started now</p>
 	
     
 </script>
- 
-
-  </body>
+   </body>
 </html>
