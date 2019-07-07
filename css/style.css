@@ -88,7 +88,8 @@ body{
 }
 
 .dark-color-bg {
-	background:#083b8a;
+	background: linear-gradient(76deg,#083b8a 0.67%,#09F 90%);
+	background-image: 
 	}
 
 .dark-section .heading span{
@@ -385,7 +386,7 @@ features
 -----------------------------------------------------------------------------------*/
 
 .section2{
-	padding-top:80px;
+	padding-top:0px;
 }
 
 
@@ -459,7 +460,7 @@ features
 .nomber-text-row-inner span{
 	display:block;
 	font-weight:600;
-	color:#777580;
+	color:#3e355f;
 	font-size:18px;
 	line-height:2;
 }
@@ -527,11 +528,7 @@ features
 
 
 .img3 img{
-	border:#e2e7ec solid 1px;
-	border-radius:6px;
-	-webkit-box-shadow: 0px 0px 51px 7px rgba(144,155,165,0.24);
--moz-box-shadow: 0px 0px 51px 7px rgba(144,155,165,0.24);
-box-shadow: 0px 0px 51px 7px rgba(144,155,165,0.24);
+	
 }
 
 
@@ -558,11 +555,11 @@ box-shadow: 0px 0px 51px 7px rgba(144,155,165,0.24);
 
 
 .section-two-colom{
-	padding:0 0 0px 0;
+	padding:0 0 40px 0;
 }
 
 .content-area-second{
-	padding:120px 0;
+	padding:0px 0;
 }
 
 
@@ -697,11 +694,11 @@ Dashboard
 
 
 .acc{
-	font-weight:500;
-	color:#fff!important;
+	font-weight:600;
+	color:#000000!important;
 	text-transform:uppercase;
 	text-align:center;
-	background:#02dbc0;
+	background:#FFBD2A;
 	padding:12px 40px;
 	display:inline-block;
 	font-style:13px;
@@ -714,7 +711,7 @@ box-shadow: 0px 8px 51px -4px rgba(144,155,165,0.73);
 
 }
 .acc:hover{
-	background:#04b6a0;
+	background:#F19304;
 	transition:all ease .7s;
 }
 /* End Dashboard */
@@ -1164,7 +1161,7 @@ Lest start yor project now
 	padding:100px 0;
 	
 	/* The image used */
-  background: #1080f2 url("../images/parallaxbg.jpg") no-repeat;
+  background: #1080f2 url("../images/parallaxbg_1.png") no-repeat;
   
   /* Set a specific height */
     height: auto; 
@@ -1518,7 +1515,7 @@ box-shadow: 0px 6px 18px -3px rgba(144,155,165,0.31);
 	margin-top:80px;
 	float:left;
     width: 100%;
-    background: linear-gradient(76deg,#09F 0.37%,#00B0D0 100%);
+    background: linear-gradient(76deg,#083b8a 0.37%,#09F 100%);
 	box-shadow: 0 0 black;
 }
 
@@ -2492,7 +2489,7 @@ Responsive CSS for all sections
 	}
 	
 	.img3 {
-    width:1000px;
+    width:1080px;
     height: auto;
     position: absolute;
     top: 0;
@@ -2509,7 +2506,7 @@ Responsive CSS for all sections
 	}
 	
 	.section3 {
-		padding:100px 0;
+		padding:40px 0;
 	}
 	
 	.content-area-second {
