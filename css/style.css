@@ -42,6 +42,17 @@
 
 -----------------------------------------------------------------------------------*/
 
+@font-face {
+	font-family: Circular;
+	src: url("../font/CircularStd-Book.otf");
+}
+
+@font-face {
+	font-family: Circular;
+	src: url("../font/CircularStd.otf");
+	font-weight: bold;
+}
+
 
 @import url('../css/icofont.css');
 *{
@@ -54,7 +65,7 @@
 }
 
 body{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:400;
 	color:#8490a4;
 	font-size:15px;
@@ -1386,7 +1397,7 @@ Footer Social
 
 .section14{
 	background:#f2f5f9;
-	padding:90px 0 20px 0;
+	padding:90px 0 0px 0;
 	text-align:center;
 	float:left;
 	width:100%;

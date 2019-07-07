@@ -1,3 +1,28 @@
 .header-group-price {
     background: gray;
 }
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Circular', sans-serif;
+ }
+
+ .heading h2, .search-sec h2, .left-heading h2 {
+     color: #2b2b2b;
+ }
+
+ .btn2, .acc {
+    box-shadow: 0px 10px 30px 1px rgba(171, 118, 0, .2);
+    border-radius: 3px;
+ }
+
+ .our-box>img{
+    height: 100px;
+    width: 100%;
+ }
+ .our-box>img path{
+    fill: white !important;
+ }
+
+ .img3 {
+    right: -370px;
+ }
