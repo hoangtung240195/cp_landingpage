@@ -4,7 +4,7 @@ Trang landing page giới thiệu phần mềm giải pháp quản trị tuyển
 
 # Beta version
 
-- url: http://beta.landing.cloudjetpotential.com/
+- url: https://lambdademy.github.io/cp_landingpage/
 - repo: https://github.com/lambdademy/cp_landingpage
 
 # Production version
