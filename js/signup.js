@@ -92,8 +92,8 @@
                         user = new User();
                         Object.assign(user, {
                             id: fuser.user.uid,
-                            email: email.input,
-                            name: name.input,
+                            email: email.value,
+                            name: name.value,
                             role: User.ROLE.ADMIN,
                             status: "1",
                         });
@@ -108,7 +108,9 @@
                         user.company_id = company.id;
                         await user.update();
 
-                        await fauth.signOut();
+                        await Auth.signOut();
+
+                        window.location.href = 'https://test-signup-cjp.netlify.com';
                     } catch (e) {
                         alert(e + "");
                         console.error({e});
