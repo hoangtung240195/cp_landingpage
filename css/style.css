@@ -266,8 +266,8 @@ body{
 /* video here */
 
 .video-box {
-	margin:0 auto;
-	max-width:800px;
+	/* margin:0 auto;
+	max-width:800px; */
 }
 
 .video-box-inner {
