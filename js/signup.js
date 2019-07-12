@@ -1,12 +1,10 @@
 (function () {
     const config = {
-        apiKey: "AIzaSyAmaUlIFpaBnzX45MYJ2LjVV7GrgTNti8E",
-        authDomain: "just-landing-229509.firebaseapp.com",
-        databaseURL: "https://just-landing-229509.firebaseio.com",
-        projectId: "just-landing-229509",
-        storageBucket: "just-landing-229509.appspot.com",
-        messagingSenderId: "512260630417",
-        appId: "1:512260630417:web:ccb7e3d2324325b6"
+        apiKey: "AIzaSyCphd7p-BHxKBj9Xaxk85ilcYYRm-HCC-Q",
+        authDomain: "cloudjet-work.firebaseapp.com",
+        databaseURL: "https://cloudjet-work.firebaseio.com",
+        projectId: "cloudjet-work",
+        appId: "1:736915700044:web:73ae17b3efdec4b3"
     };
     firebase.initializeApp(config);
     const Auth = firebase.auth();
@@ -23,6 +21,12 @@
                 $("#submit").attr("disabled", "");
             }
         });
+
+        $.validator.addMethod('pwcheck', function(value, element, params) {
+            return this.optional(element) || 
+                (typeof value === "string" 
+                && value.match(/^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})/));
+        }, "Mật khẩu phải chứa ít nhất 1 kí tự thường, 1 kí tự in hoa và 1 chữ số");
 
         const validator = $("#signup-form").validate({
             rules: {
@@ -44,7 +48,8 @@
                 },
                 password: {
                     required: true,
-                    min: 6
+                    minlength: 6,
+                    pwcheck: true,
                 }
             },
             messages: {
@@ -56,7 +61,7 @@
                 },
                 password: {
                     required: "Mật khẩu không được để trống",
-                    min: "Mật khẩu phải dài hơn 5 kí tự"
+                    minlength: "Mật khẩu phải dài hơn 5 kí tự"
                 }
             },
             submitHandler(form) {
@@ -110,7 +115,7 @@
 
                         await Auth.signOut();
 
-                        window.location.href = 'https://test-signup-cjp.netlify.com';
+                        window.location.href = 'https://pro.cloudjetpotential.com/login?email=' + email.value;
                     } catch (e) {
                         alert(e + "");
                         console.error({e});
