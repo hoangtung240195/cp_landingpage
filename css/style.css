@@ -1340,7 +1340,9 @@ freetrial
 	padding-top:50px;
 }
 
-.form input{
+.form input[type=text], 
+.form input[type=password],
+.form input[type=email] {
 	width:100%;
 	background:#fff;
 	border:1px solid #FFFFFF;
