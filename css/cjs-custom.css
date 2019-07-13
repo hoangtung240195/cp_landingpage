@@ -109,6 +109,11 @@ h1, h2, h3, h4, h5 {
   padding: 8px 16px;
  }
 
+ #btnRegister:hover {
+   border: none;
+   background: #F19304;
+ }
+
  .menu ul li a {
   font-weight: 400;
   font-size: 14px;
