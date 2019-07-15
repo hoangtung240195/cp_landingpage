@@ -170,6 +170,9 @@
       })(window, document, "script", "dataLayer", "GTM-T36F7G6");
     </script>
     <!-- End Google Tag Manager -->
+
+    <!-- CAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js?hl=vi" async defer></script>
   </head>
 
   <body class="signup-page">
@@ -243,6 +246,9 @@
           />
         </div>
         <div class="form-group">
+          <input name='phone' type="tel" placeholder="Số điện thoại" class="form-control"/>
+        </div>
+        <div class="form-group">
           <input 
             name='company_name'
             type="text" placeholder="Tên công ty" class="form-control" />
@@ -259,6 +265,11 @@
           <input 
             name='password'
             type="password" placeholder="Mật khẩu" class="form-control" />
+        </div>
+        <div class="text-center">
+          <div class="g-recaptcha text-center" 
+              data-callback="verifySuccess"
+              data-sitekey="6LePrK0UAAAAAEmgkLZ85eI1CJ8sgLYrakFH7F-_"></div>
         </div>
         <div>
           <input id="accept-policy" name='accept_policy' type="checkbox" />

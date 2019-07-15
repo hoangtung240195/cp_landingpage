@@ -1,4 +1,8 @@
+
 (function () {
+    let isVerifyCaptcha = false;
+    let isAcceptPolicy = false;
+
     const config = {
         apiKey: "AIzaSyCphd7p-BHxKBj9Xaxk85ilcYYRm-HCC-Q",
         authDomain: "cloudjet-work.firebaseapp.com",
@@ -9,13 +13,24 @@
     firebase.initializeApp(config);
     const Auth = firebase.auth();
     const Firestore = firebase.firestore();
-    CJPModels.init(Firestore);
+    CJPModels.init(Firestore, Auth);
+
+    window.verifySuccess = function(response) {
+        isVerifyCaptcha = true;
+        if (isAcceptPolicy && isVerifyCaptcha) {
+            $("#submit").removeAttr("disabled");
+        } else {
+            $("#submit").attr("disabled", "");
+        }
+    }
 
     const { User, Company } = CJPModels;
 
     $(document).ready(() => {
         $("#accept-policy").on("change", function () {
-            if ($(this)[0].checked) {
+            isAcceptPolicy = $(this)[0].checked;
+            
+            if (isAcceptPolicy && isVerifyCaptcha) {
                 $("#submit").removeAttr("disabled");
             } else {
                 $("#submit").attr("disabled", "");
@@ -27,6 +42,12 @@
                 (typeof value === "string" 
                 && value.match(/^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})/));
         }, "Mật khẩu phải chứa ít nhất 1 kí tự thường, 1 kí tự in hoa và 1 chữ số");
+
+        $.validator.addMethod('phone', function(value, element, params) {
+            return this.optional(element) || 
+                (typeof value === "string" 
+                && value.match(/^([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})$/));
+        }, "Số điện thoại không hợp lệ");
 
         const validator = $("#signup-form").validate({
             rules: {
@@ -46,6 +67,10 @@
                     required: true,
                     email: true
                 },
+                phone: {
+                    required: true,
+                    phone: true,
+                },
                 password: {
                     required: true,
                     minlength: 6,
@@ -57,11 +82,14 @@
                 company_name: "Tên Công ty không được để trống",
                 email: {
                     required: "Email không thể để trống",
-                    email: "Email không hợp lệ"
+                    email: "Email không hợp lệ",
                 },
                 password: {
                     required: "Mật khẩu không được để trống",
                     minlength: "Mật khẩu phải dài hơn 5 kí tự"
+                },
+                phone: {
+                    required: "Bạn cần nhập số điện thoại",
                 }
             },
             submitHandler(form) {
