@@ -170,3 +170,21 @@ h1, h2, h3, h4, h5 {
 .header-top.affix {
   padding: 0 0 15px 0 !important;
 }
+
+.acc.chat {
+  border: 1px solid #0084FF;
+  color: #0084FF !important;
+  background: transparent;
+  width: 100%;
+}
+
+.fool-box p {
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.fool-box {
+  min-height: 350px;
+}
