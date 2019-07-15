@@ -98,7 +98,8 @@
                     company_name,
                     company_website,
                     name,
-                    password
+                    password,
+                    phone,
                 } = form.elements;
 
 
@@ -129,6 +130,7 @@
                             name: name.value,
                             role: User.ROLE.ADMIN,
                             status: "1",
+                            phone: phone.value,
                         });
                         await user.insert();
 
