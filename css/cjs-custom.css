@@ -4,6 +4,7 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
   "Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji",
   "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 200;
 }
 
 
@@ -31,6 +32,33 @@ body {
   font-weight: 200;
 }
 
+.header-top.affix {
+  padding: 0 0 15px 0 !important;
+  background: linear-gradient(120deg,#083b8a 0.60%,#09F 60%);
+}
+
+
+/* FOOTER */
+.company-info p {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.footer__content__gpkd {
+  margin: 20px 0;
+}
+
+.row.footer__content_gpkd {
+  border-top: .5px solid #ffffff38;
+}
+
+.footer__content_pd.footer__content__gpkd p {
+  color: #ffffff80;
+}
+
+.footer__content {
+  color: #ffffffde;
+}
 
 
 
@@ -140,7 +168,7 @@ h1, h2, h3, h4, h5 {
 
  #btnRegister {
   color: black !important;
-  background-color: #ffbd2b;
+  background: linear-gradient(-45deg, #ffb347, #ffcc33);
   border-radius: 3px;
   text-align: center;
   padding: 8px 16px;
@@ -148,7 +176,7 @@ h1, h2, h3, h4, h5 {
 
  #btnRegister:hover {
    border: none;
-   background: #F19304;
+   background: linear-gradient(0deg, #ffb347, #ffcc33);
  }
 
  .menu ul li a {
@@ -197,10 +225,6 @@ h1, h2, h3, h4, h5 {
 
 .header {
       padding-top: 0px !important;
-}
-
-.header-top.affix {
-  padding: 0 0 15px 0 !important;
 }
 
 .acc.chat {
