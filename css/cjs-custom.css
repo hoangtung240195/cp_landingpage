@@ -19,10 +19,18 @@ body {
   text-shadow: 0px 1px 2px #002964;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 414px) {
   .header h1 {
     padding-top: 100px;
-    font-size: 32px;
+    font-size: 28px;
+    line-height: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 415px){
+  .header h1 {
+    padding-top: 100px;
+    font-size: 50px;
     line-height: 1;
   }
 }
@@ -109,7 +117,7 @@ h1, h2, h3, h4, h5 {
  }
 
  .btn2, .acc {
-    border-radius: 3px;
+    border-radius: 4px;
     box-shadow: none;
  }
 
@@ -269,6 +277,10 @@ h1, h2, h3, h4, h5 {
   width: 100%;
 }
 
+.acc {
+  padding: 8px 8px;
+}
+
 .fool-box p {
   text-align: center;
   padding-top: 0px;
@@ -284,6 +296,15 @@ h1, h2, h3, h4, h5 {
   padding: 60px 0;
 }
 
+.section11 h2 {
+  color: #fff !important;
+}
+
 .section2 {
   padding-top: 100px;
+}
+
+.section6 .row {
+  padding-left: 15px;
+  padding-right: 15px;
 }
