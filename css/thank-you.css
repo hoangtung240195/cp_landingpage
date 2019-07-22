@@ -1,9 +1,17 @@
 .thank-you-page {
     min-height: 100vh;
+    color: black;
 }
 
 .thank-you-page .footer-section {
     position: -webkit-sticky;
     position: sticky;
     top: 100%;
+}
+.thank-you-page .content {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
