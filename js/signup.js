@@ -29,7 +29,7 @@
     $(document).ready(() => {
         $("#accept-policy").on("change", function () {
             isAcceptPolicy = $(this)[0].checked;
-            
+
             if (isAcceptPolicy && isVerifyCaptcha) {
                 $("#submit").removeAttr("disabled");
             } else {
@@ -38,14 +38,14 @@
         });
 
         $.validator.addMethod('pwcheck', function(value, element, params) {
-            return this.optional(element) || 
-                (typeof value === "string" 
+            return this.optional(element) ||
+                (typeof value === "string"
                 && value.match(/^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})/));
         }, "Mật khẩu phải chứa ít nhất 1 kí tự thường, 1 kí tự in hoa và 1 chữ số");
 
         $.validator.addMethod('phone', function(value, element, params) {
-            return this.optional(element) || 
-                (typeof value === "string" 
+            return this.optional(element) ||
+                (typeof value === "string"
                 && value.match(/^([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})$/));
         }, "Số điện thoại không hợp lệ");
 
@@ -145,7 +145,7 @@
 
                         await Auth.signOut();
 
-                        window.location.href = 'https://pro.cloudjetpotential.com/login?email=' + email.value;
+                        window.location.href = '/thank-you/';
                     } catch (e) {
                         alert(e + "");
                         console.error({e});
