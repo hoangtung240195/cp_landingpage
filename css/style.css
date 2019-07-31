@@ -530,18 +530,12 @@ features
 }
 
 .img3{
-	width:1000px;
+	/* width:1000px; */
     height: auto;
     position: absolute;
     top: 0;
     right: -430px;
 }
-
-
-.img3 img{
-	
-}
-
 
 .section3{
 	padding:100px 0;
@@ -2503,7 +2497,7 @@ Responsive CSS for all sections
 	}
 	
 	.img3 {
-    width:1080px;
+    /* width:1080px; */
     height: auto;
     position: absolute;
     top: 0;

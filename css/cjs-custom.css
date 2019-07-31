@@ -209,6 +209,10 @@ h1, h2, h3, h4, h5 {
   border-radius: 3px;
   text-align: center;
   padding: 8px 16px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 8px;
  }
 
  #btnRegister:hover {
@@ -245,6 +249,11 @@ h1, h2, h3, h4, h5 {
   box-sizing: border-box;
   text-align: center;
   background: linear-gradient(-45deg, #ffb347, #ffcc33);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 8px;
+}
 }
   
 .btn2:hover {
@@ -307,4 +316,9 @@ h1, h2, h3, h4, h5 {
 .section6 .row {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.section20 {
+  padding: 80px 0;
+  background: #f2f5f9;
 }
