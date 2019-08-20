@@ -322,3 +322,45 @@ h1, h2, h3, h4, h5 {
   padding: 80px 0;
   background: #f2f5f9;
 }
+
+.about-img .img-fluid {
+  max-height: 400px !important;
+  float: right;
+}
+
+.hightlight-package {
+  padding: 40px;
+  padding-left: 80px;
+  background: linear-gradient(172.63deg, #506BF0 0%, #5FD1F9 100%);
+  color: white !important;
+  border-top-left-radius: 100px !important;
+  border-bottom-right-radius: 100px !important;
+  border-radius: 6px;
+  min-height: 400px !important;
+}
+
+.hightlight-package h2 {
+  color: white !important;
+}
+
+.normal-package {
+  padding: 40px;
+  padding-left: 80px;
+  border: solid 1px #6059f6;
+  border-top-left-radius: 100px !important;
+  border-bottom-right-radius: 100px !important;
+  border-radius: 6px;
+  min-height: 400px !important;
+}
+
+.testimonial__content p {
+  font-size: 18px;
+}
+
+.header_area.navbar_fixed .main_menu .navbar {
+  background: linear-gradient(118.39deg, #5170F1 7.12%, #5DBDF8 95.25%) !important;
+}
+
+.header_area.navbar_fixed .main_menu {
+  box-shadow: none;
+}
